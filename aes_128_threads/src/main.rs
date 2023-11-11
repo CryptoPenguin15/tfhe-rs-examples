@@ -1,5 +1,5 @@
 // see https://homes.esat.kuleuven.be/~nsmart/MPC/
-// Basic Circuit File 'aes_128.txt'
+// MAND Circuit File 'aes_128_mand.txt'
 
 // dependencies
 // tfhe = { version = "*", features = ["boolean", "aarch64-unix"] }
@@ -41,7 +41,7 @@ fn main() {
     println!("CPU:s logical       {:}", num_cpus::get());
 
     let start = Instant::now();
-    let algorithm = fs::read_to_string("./aes_128.txt").expect("File not found!");
+    let algorithm = fs::read_to_string("./aes_128_mand.txt").expect("File not found!");
     println!("file bc read time   {:.2?}", start.elapsed());
 
     let start = Instant::now();
