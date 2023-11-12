@@ -3,6 +3,12 @@
 
 ![aes_128](./aes_128.png "Part of the boolean circuit")
 
+## Performance
+
+![aes_128_perf_hist](./aes_128_perf_hist.png "Absolute timing")
+
+For aes_128_threads, each thread evaluates one boolean gate at a time.
+
 ## Log mand bc-format
 
 $ cargo run --release
